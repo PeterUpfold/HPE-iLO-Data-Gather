@@ -25,7 +25,7 @@ namespace HPE_iLO_Data_Gather.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://somewhere.example.com/")]
         public string iLOURL {
             get {
                 return ((string)(this["iLOURL"]));
@@ -34,7 +34,7 @@ namespace HPE_iLO_Data_Gather.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("low-privileged-account")]
         public string iLOUsername {
             get {
                 return ((string)(this["iLOUsername"]));
@@ -43,10 +43,28 @@ namespace HPE_iLO_Data_Gather.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("high-quality-password")]
         public string iLOPassword {
             get {
                 return ((string)(this["iLOPassword"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("%APPDATA%\\HPE-iLO-Data-Gather.json")]
+        public string JSONOutput {
+            get {
+                return ((string)(this["JSONOutput"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("50")]
+        public int FailTestsAtFanPercentage {
+            get {
+                return ((int)(this["FailTestsAtFanPercentage"]));
             }
         }
     }

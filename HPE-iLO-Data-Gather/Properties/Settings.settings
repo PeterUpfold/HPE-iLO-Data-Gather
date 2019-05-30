@@ -3,13 +3,19 @@
   <Profiles />
   <Settings>
     <Setting Name="iLOURL" Type="System.String" Scope="Application">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">https://somewhere.example.com/</Value>
     </Setting>
     <Setting Name="iLOUsername" Type="System.String" Scope="Application">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">low-privileged-account</Value>
     </Setting>
     <Setting Name="iLOPassword" Type="System.String" Scope="Application">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">high-quality-password</Value>
+    </Setting>
+    <Setting Name="JSONOutput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">%APPDATA%\HPE-iLO-Data-Gather.json</Value>
+    </Setting>
+    <Setting Name="FailTestsAtFanPercentage" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">50</Value>
     </Setting>
   </Settings>
 </SettingsFile>
